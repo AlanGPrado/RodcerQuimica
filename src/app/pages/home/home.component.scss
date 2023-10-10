@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Exo+2:wght@300&family=Lora&family=Raleway&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Exo+2:wght@300&family=Lora&family=Raleway&family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap');
+main {
+  height: 100vh;
+}
+
+.img-container .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: none;
+  opacity: 1;
+  width: 35%;
+  height: auto;
+}
+
+h1 {
+  // font-family: 'Raleway', sans-serif !important;
+  font-family: 'Roboto Condensed', sans-serif !important;
+  // color: #F8BF00;
+  color: white;
+  text-align: center;
+  font-size: 6em;
+  margin-bottom: 0;
+  text-shadow: 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  // color: white;
+  color: white;
+  text-align: start;
+  font-size: 2em;
+  // background-color: rgba(25, 25, 112, 0.8);
+  // background-color: rgba(160, 175, 14, 0.8); /* 0.5 represents the opacity (50%) */
+  // background-color: #005230d4;
+  background-color: rgba(25, 25, 112, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.img-container div {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  opacity: 0;
+  animation: heroanimation 30s infinite;
+}
+
+@keyframes heroanimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  12.5% {
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  75% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+.img-container div:nth-child(1) {
+  background-image: url(../../../assets/images/camion_13.jpeg);
+  animation-delay: 0s;
+}
+
+.img-container div:nth-child(2) {
+  background-image: url(../../../assets/images/camion_2.jpeg);
+  animation-delay: 6s;
+}
+
+.img-container div:nth-child(3) {
+  background-image: url(../../../assets/images/camion_14.jpeg);
+  animation-delay: 12s;
+}
+
+.img-container div:nth-child(4) {
+  background-image: url(../../../assets/images/camion_7.jpeg);
+  animation-delay: 18s;
+}
+
+.img-container div:nth-child(5) {
+  background-image: url(../../../assets/images/camion_12.jpeg);
+  animation-delay: 24s;
+}
+
+.img-container .chevron-down {
+  position: absolute;
+  top: 90%;
+  left: 48.5%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  width: 5%;
+  height: auto;
+  animation: moveUpDown 2s linear infinite;
+  z-index: 9;
+  transform-origin: center;
+  img {
+    width: 70px;
+  }
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+.landing-img {
+  width: 45vw;
+  border-radius: 5px;
+}
+
+.presentation {
+  margin-left: 15vw;
+}
