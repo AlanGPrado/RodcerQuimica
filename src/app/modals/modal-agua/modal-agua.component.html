@@ -1,27 +1,36 @@
 <div class="container-modal">
   <div class="modal-content">
     <div>
+      <div class="header-modal">
+        <button class="button-close" (click)="onCloseClick()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
       <h1 style="text-align: center;">TRATAMIENTO DE AGUAS RESIDUALES</h1>
       <p>En nuestra empresa el tratamiento de aguas residuales de origen industrial nos especializamos en la
         distribución de productos para el mecanismo y proceso usado para tratar aguas residuales que han sido
         contaminadas por algún medio por actividades de origen antropológico industrial o comercial como coagulantes
         inorgánicos entre otros algunos son sulfato de aluminio liquido al 50% , hipoclorito de sodio al 12% ácido
         clorhídrico al 33 % y más..</p>
-      <div class="images">
+      <!-- <div class="images">
         <img style="width: 30%;" src="assets/images/agua_0.jpg" alt="">
+      </div> -->
+      <div class="images">
+        <img style="width: 30%;" src="assets/images/agua_1.png" alt="">
       </div>
       <p>Se consideran Aguas Residuales a los líquidos que han sido utilizados en las actividades diarias de una ciudad
         (domésticas, comerciales, industriales y de servicios).
       </p>
-      <div class="images">
-        <img style="width: 30%;" src="assets/images/agua_1.png" alt="">
-      </div>
       <p>Estamos en búsqueda de nuevos químicos que nos permitan eficientar el uso y reusó del agua en los sistemas de
         enfriamiento y en las calderas Nuestro mayor propósito es ofrecer calidad y servicio para nuestros clientes del
         giro industrial por lo cual nos comprometemos a conseguir y encontrar solución en cualquier producto que nos
         soliciten.
       </p>
     </div>
-    <button mat-button (click)="onCloseClick()">Close</button>
+    <!-- <div class="button-close">
+      <button mat-button (click)="onCloseClick()">
+        Cerrar<mat-icon>close</mat-icon>
+      </button>
+    </div> -->
   </div>
 </div>

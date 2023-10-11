@@ -30,13 +30,13 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 
-.img-container {
+.img-container-us {
   display: flex;
   justify-content: end;
   padding-right: 8em;
 }
 
-.img-container img {
+.img-container-us img {
   object-fit: cover;
   width: 28vw;
   height: 100%;

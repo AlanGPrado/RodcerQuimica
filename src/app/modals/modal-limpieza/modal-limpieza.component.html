@@ -1,8 +1,14 @@
 <div class="container-modal">
   <div class="modal-content">
     <div>
+      <div class="header-modal">
+        <button class="button-close" (click)="onCloseClick()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
       <h1 style="text-align: center;">PRODUCTOS QUÍMICOS DE LIMPIEZA</h1>
-      <p style="text-align: center;">Nuestra área en productos de limpieza nos permite brindar la solución a los problemas de limpieza que se
+      <p style="text-align: initial;">Nuestra área en productos de limpieza nos permite brindar la solución a los
+        problemas de limpieza que se
         encuentran en diversas áreas en el ramo institucional e industrial, dando como resultado fabricación de
         productos acorde al giro.</p>
     </div>
@@ -36,6 +42,10 @@
         </ul>
       </div>
     </div>
-    <button mat-button (click)="onCloseClick()">Close</button>
+    <!-- <div class="button-close">
+      <button mat-button (click)="onCloseClick()">Cerrar
+        <mat-icon>close</mat-icon>
+      </button>
+    </div> -->
   </div>
 </div>

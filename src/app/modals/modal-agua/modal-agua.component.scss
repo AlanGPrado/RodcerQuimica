@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Exo+2:wght@300&family=Lora&family=Raleway&family=Roboto:wght@300;400&display=swap');
+
 .container-modal {
   position: fixed;
   top: 0;
@@ -17,6 +19,7 @@
     width: 80%;
     max-width: 800px;
     position: relative;
+    border-radius: 24px;
 
     .images {
       display: flex;
@@ -27,4 +30,62 @@
 
 ::ng-deep .mdc-dialog__container {
   display: unset;
+}
+
+p,
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  color: #005230;
+  margin-top: 10px;
+  // text-decoration: underline;
+  // text-underline-offset: 3px;
+}
+
+.button-close {
+  display: flex;
+  justify-content: center;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F94B37;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid black;
+    height: 45px;
+  }
+
+  button:hover {
+    background-color: rgb(228, 64, 46);
+  }
+}
+
+.button-close {
+  border: unset;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.header-modal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  mat-icon {
+    font-size: 40px;
+    width: auto;
+    height: auto;
+  }
 }

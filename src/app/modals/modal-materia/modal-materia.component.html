@@ -1,8 +1,13 @@
 <div class="container-modal">
   <div class="modal-content">
     <div class="container-materia">
+      <div class="header-modal">
+        <button class="button-close" (click)="onCloseClick()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
       <h1 style="text-align: center;">MATERIA PRIMA PARA LA INDUSTRIA</h1>
-      <p>Agrupamos una extensa variedad de productos químicos genéricos, químicos inorgánicos y químicos de especialidad
+      <p style="text-align: initial;">Agrupamos una extensa variedad de productos químicos genéricos, químicos inorgánicos y químicos de especialidad
         contamos con un sin fin de productos químicos par a la producción de productos industriales, comerciales y de
         uso prácticamente en todo el proceso industrial, una parte de ellos son:</p>
       <div class="content-ul">
@@ -29,6 +34,10 @@
       </div>
 
     </div>
-    <button mat-button (click)="onCloseClick()">Close</button>
+    <!-- <div class="button-close">
+      <button mat-button (click)="onCloseClick()">Close
+        <mat-icon>close</mat-icon>
+      </button>
+    </div> -->
   </div>
 </div>

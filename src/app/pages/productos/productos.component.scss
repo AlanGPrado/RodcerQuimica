@@ -45,13 +45,17 @@
 
     .text-clean-2 {
       // background-color: #F8F8F8;
-      text-align: center;
+      text-align: initial;
       padding-left: 20vw;
       padding-right: 20vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
       font-family: 'Raleway', sans-serif;
+
+      p {
+        text-align: initial;
+      }
     }
   }
 }
@@ -76,6 +80,10 @@
   flex-direction: column;
   justify-content: center;
   font-family: 'Raleway', sans-serif;
+
+  p {
+    text-align: initial;
+  }
 }
 
 .more-info {
