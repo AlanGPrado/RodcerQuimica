@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  showMobileMenu: boolean = false;
+
+  showMenu() {
+    this.showMobileMenu = !this.showMobileMenu;
+  }
 
 }

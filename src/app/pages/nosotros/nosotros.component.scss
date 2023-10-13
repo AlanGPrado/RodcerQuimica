@@ -6,7 +6,8 @@ main {
 }
 
 h1,
-p {
+p,
+li {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -52,7 +53,8 @@ p {
 
 .mision-vision {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   width: 75%;
   justify-items: center;
@@ -64,6 +66,7 @@ p {
     padding-right: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 5em;
 
     mat-icon {
       font-size: 50px;
@@ -84,6 +87,18 @@ p {
   p {
     font-size: 20px;
   }
+
+  li {
+    font-size: 20px;
+  }
+}
+
+.ul-valores {
+  list-style-type: square;
+
+  li {
+    margin-bottom: 10px;
+  }
 }
 
 .chief {
@@ -91,4 +106,28 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 8em;
+}
+
+.token-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // margin-top: 2em;
+
+  .tokens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
 }

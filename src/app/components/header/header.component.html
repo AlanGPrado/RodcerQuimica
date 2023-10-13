@@ -20,11 +20,42 @@
       <img src="assets/logos/logo.png" alt="">
     </div>
 
-    <div>
+    <div class="button-contact">
       <a href="" class="contacto">
         <p>CONTACTANOS</p>
         <mat-icon>insert_comment</mat-icon>
       </a>
+    </div>
+
+    <div class="menu-mobile">
+      <button class="burguer-button" (click)="showMenu();">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="menu-items" [hidden]="!showMobileMenu">
+        <nav>
+          <ul class="burguer-menu-elements">
+            <li>
+              <!-- <mat-icon>home</mat-icon> -->
+              Inicio
+            </li>
+            <hr>
+            <li>
+              <!-- <mat-icon>business_center</mat-icon> -->
+              Nosotros
+            </li>
+            <hr>
+            <li>
+              <!-- <mat-icon>menu_book</mat-icon> -->
+              Productos
+            </li>
+            <hr>
+            <li>
+              <!-- <mat-icon>menu_book</mat-icon> -->
+              Contactanos
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 
