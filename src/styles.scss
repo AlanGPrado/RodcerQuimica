@@ -17,6 +17,7 @@ body {
 
     .logo {
       justify-content: flex-end !important;
+
       img {
         width: 90px !important;
       }
@@ -39,6 +40,7 @@ body {
     .menu-mobile {
       display: flex !important;
       width: 20% !important;
+
       button {
         display: flex;
         align-items: center;
@@ -128,6 +130,7 @@ body {
   .title-products {
     width: 78% !important;
     padding: 0 15px 0 15px;
+
     h2 {
       font-size: 1.5em !important;
     }
@@ -230,5 +233,186 @@ body {
 /* TABLET STYLES */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header-container {
+    grid-template-columns: repeat(2, 1fr) !important;
 
+    .menu {
+      display: none !important;
+    }
+
+    .button-contact {
+      display: none;
+    }
+
+    .logo {
+      justify-content: flex-start !important;
+
+      img {
+        width: 95px !important;
+      }
+    }
+
+    .menu-mobile {
+      display: flex !important;
+      width: 20% !important;
+      justify-content: flex-end !important;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        width: 45px;
+        border-radius: 7px;
+        border: 1px solid black !important;
+        background-color: white;
+
+        mat-icon {
+          font-size: 26px;
+          height: unset;
+          width: unset;
+          color: black;
+        }
+      }
+    }
+
+    .menu-mobile {
+      display: flex !important;
+    }
+  }
+
+  .title {
+    h1 {
+      font-size: 4em !important
+    }
+  }
+
+  .container {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+
+    .img-container-us {
+      justify-content: center !important;
+      padding: 0 !important;
+
+      img {
+        width: 55% !important;
+      }
+    }
+
+    .about-container {
+      padding: 0 !important;
+
+      h1 {
+        text-align: center !important;
+      }
+
+      p {
+        padding: 0 10% 0 10% !important;
+      }
+    }
+  }
+
+  .chief {
+
+    .mision-vision {
+      width: 90% !important;
+
+      .mis-vis-container {
+        width: 70% !important;
+      }
+    }
+  }
+
+  .container-products-title {
+
+    .title-products {
+      width: 80% !important;
+      padding: 0 4% 0 4% !important;
+
+      h2 {
+        font-size: 2.5em !important;
+      }
+    }
+  }
+
+  .parent-double {
+    display: flex !important;
+    flex-direction: column !important;
+
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+
+  .more-info {
+    margin-bottom: 3em !important;
+  }
+
+  .more-info::after {
+    right: -28px !important;
+  }
+
+  .parent-double-2 {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+
+  .catalogos-title::before {
+    width: 200px !important;
+  }
+
+  .catalogos-title::after {
+    width: 200px !important;
+  }
+
+  .pdf-parent {
+    width: 100% !important;
+    min-height: 20rem !important;
+
+    h3 {
+      font-size: 17px !important;
+    }
+
+    a {
+      font-size: 16px !important;
+
+      mat-icon {
+        height: 20px !important;
+        width: 20px !important;
+      }
+    }
+  }
+
+  .footer-content {
+    .nav-footer {
+      nav {
+        display: none !important;
+      }
+    }
+
+    .contact {
+      align-items: flex-start !important;
+      margin: 0 !important;
+
+      .email {
+        height: 60px !important;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+  .nav-list {
+    padding: 0 !important;
+    gap: 40px !important;
+  }
 }
