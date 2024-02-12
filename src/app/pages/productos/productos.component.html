@@ -1,20 +1,18 @@
 <main>
   <div class="container-products-title">
     <div class="title-products">
-      <h2>Contamos con una amplia cantidad de productos para las siguientes áreas:</h2>
+      <h2>{{ 'productos.titleProductos' | translate }}</h2>
     </div>
   </div>
   <div class="container-products">
     <div class="parent-double">
       <div>
-        <img src="assets/images/chemical.jpg" alt="">
+        <img src="assets/images/barrels_2.png" alt="">
       </div>
       <div class="text-clean">
-        <h2>MATERIA PRIMA PARA LA INDUSTRIA</h2>
-        <p>Agrupamos una extensa variedad de productos químicos genéricos, químicos inorgánicos y químicos de
-          especialidad, de uso en prácticamente todos los procesos industriales. Agregando Un aspecto de especial
-          relevancia con el que nos comprometemos, la transportación segura.</p>
-        <a style="cursor: pointer;" class="more-info" (click)="openModalMateria()">MÁS INFORMACIÓN</a>
+        <h2>{{ 'productos.titleMateriaPrima' | translate }}</h2>
+        <p>{{ 'productos.textMateriaPrima' | translate }}</p>
+        <a style="cursor: pointer;" class="more-info" (click)="openModalMateria()">{{ 'productos.moreInfo' | translate }}</a>
       </div>
     </div>
   </div>
@@ -22,12 +20,9 @@
   <div class="container-products-2">
     <div class="parent-double-2">
       <div class="text-clean-2">
-        <h2>TRATAMIENTO DE AGUAS</h2>
-        <p>Contamos con un ONE-STOP-SHOP gran portafolio y disponibilidad oportuna en productos químicos para el proceso
-          y tratado de aguas residuales, ya que se usa en la mayor parte de las plantas industriales para aumentar la
-          calidad del efluente y garantizar que exista un medio con unas condiciones óptimas para la actividad
-          bacteriana.</p>
-        <a style="cursor: pointer;" class="more-info" (click)="openModalAgua()">MÁS INFORMACIÓN</a>
+        <h2>{{ 'productos.titleTratamientoAguas' | translate }}</h2>
+        <p>{{ 'productos.textTratamientoAguas' | translate }}</p>
+        <a style="cursor: pointer;" class="more-info" (click)="openModalAgua()">{{ 'productos.moreInfo' | translate }}</a>
       </div>
       <div>
         <img src="assets/images/water.jpg" alt="">
@@ -41,31 +36,32 @@
         <img src="assets/images/clean.jpeg" alt="">
       </div>
       <div class="text-clean">
-        <h2>PRODUCTOS QUIMICOS DE LIMPIEZA</h2>
-        <p>Nos especializamos en ser fabricantes y poder tener como resultado más de 40 productos terminados de alta
-          calidad para uso comercial o industrial a un margen de costos y tiempos de entregas que garantizan su entera
-          satisfacción en el área a aplicar.</p>
-        <a style="cursor: pointer;" class="more-info" (click)="openModalLimpieza()">MÁS INFORMACIÓN</a>
+        <h2>{{ 'productos.titleProductosLimpieza' | translate }}</h2>
+        <p>{{ 'productos.textProductosLimpieza' | translate}}</p>
+        <a style="cursor: pointer;" class="more-info" (click)="openModalLimpieza()">{{ 'productos.moreInfo' | translate }}</a>
       </div>
     </div>
   </div>
-  <h1 class="catalogos-title">CATÁLOGOS</h1>
+  <h1 class="catalogos-title">{{ 'productos.catalogos' | translate }}</h1>
   <div class="container-pdf">
     <div class="pdf-parent">
       <div>
-        <h3>CATÁLOGO DE PRODUCTOS</h3>
+        <h3>{{ 'productos.catalogoProductos' | translate }}</h3>
         <img style="width: 45%" src="assets/images/catalogo_productos.jpg" alt="">
-        <a class="download" href="assets/docs/CATALOGO_PRODUCTOS_2020.pdf" target="_blank">Descargar PDF<mat-icon>download</mat-icon></a>
+        <!-- <a class="download" href="assets/docs/CATALOGO_PRODUCTOS_2020.pdf" target="_blank">{{ 'productos.descargarPDF' | translate }}<mat-icon>file_open</mat-icon></a> -->
+        <a class="download" (click)="openModalCatalogoProductos()">{{ 'productos.descargarPDF' | translate }}<mat-icon>file_open</mat-icon></a>
       </div>
       <div>
-        <h3>PRODUCTOS DE LIMPIEZA</h3>
+        <h3>{{ 'productos.catalogoLimpieza' | translate }}</h3>
         <img style="width: 45%" src="assets/images/catalogo_limpieza.jpg" alt="">
-        <a class="download" href="assets/docs/CATALOGO_LIMPIEZA_2020.pdf" target="_blank">Descargar PDF<mat-icon>download</mat-icon></a>
+        <!-- <a class="download" href="assets/docs/CATALOGO_LIMPIEZA_2020.pdf" target="_blank">{{ 'productos.descargarPDF' | translate }}<mat-icon>file_open</mat-icon></a> -->
+        <a class="download" (click)="openModalCatalogoLimpieza()">{{ 'productos.descargarPDF' | translate }}<mat-icon>file_open</mat-icon></a>
       </div>
       <div>
-        <h3>PRODUCTOS DE IMPORTACIÓN</h3>
+        <h3>{{ 'productos.catalogoImportacion' | translate }}</h3>
         <img style="width: 45%" src="assets/images/catalogo_importacion.jpg" alt="">
-        <a class="download" href="assets/docs/CATALOGO_IMPORTACION_2020.pdf" target="_blank">Descargar PDF<mat-icon>download</mat-icon>
+        <!-- <a class="download" href="assets/docs/CATALOGO_IMPORTACION_2020.pdf" target="_blank">{{ 'productos.descargarPDF' | translate }}<mat-icon>file_open</mat-icon> -->
+        <a class="download" (click)="openModalCatalogoImportacion()">{{ 'productos.descargarPDF' | translate }}<mat-icon>file_open</mat-icon>
         </a>
       </div>
     </div>

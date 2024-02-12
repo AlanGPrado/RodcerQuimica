@@ -3,60 +3,78 @@
     <div class="child menu">
       <nav>
         <ul class="nav-list">
-          <li>
-            <a href=""><span>INICIO</span></a>
+          <li (click)="navigateToSection('inicio')" style="cursor: pointer;">
+            <span>{{ 'header.inicio' | translate }}</span>
           </li>
-          <li>
-            <a href=""><span>NOSOTROS</span></a>
+          <li (click)="navigateToSection('nosotros')" style="cursor: pointer;">
+            <span>{{ 'header.nosotros' | translate }}</span>
           </li>
-          <li>
-            <a href=""><span>PRODUCTOS</span></a>
+          <li (click)="navigateToSection('productos')" style="cursor: pointer;">
+            <span>{{ 'header.productos' | translate }}</span>
           </li>
         </ul>
       </nav>
     </div>
 
-    <div class="child logo">
+    <div class="child logo" (click)="navigateToSection('inicio')" style="cursor: pointer;">
       <img src="assets/logos/logo.png" alt="">
     </div>
 
-    <div class="button-contact">
-      <a href="" class="contacto">
-        <p>CONTACTANOS</p>
+    <div class="button-contact" style="cursor: pointer;">
+      <a class="contacto" (click)="navigateToSection('contactanos')">
+        <p>{{ 'header.contacto' | translate }}</p>
         <mat-icon>insert_comment</mat-icon>
       </a>
+      <span class="language">
+        <button (click)="showLanguageMenu();">
+          <mat-icon>language</mat-icon>
+        </button>
+        <div class="menu-language" [hidden]="!showLanguage">
+          <ul (click)="changeLanguage($event); showLanguage = false;">
+            <li class="mx-li" data-value="es"><img data-value="es" src="assets/images/mex-flag.svg" alt="MX">Español</li>
+            <hr>
+            <li class="us-li" data-value="en"><img data-value="en" src="assets/images/usa-flag.svg" alt="US">English</li>
+          </ul>
+
+        </div>
+      </span>
     </div>
 
     <div class="menu-mobile">
-      <button class="burguer-button" (click)="showMenu();">
+      <button class="language-button" (click)="showLanguageMenuMobile(); showMobileMenu = false;">
+        <mat-icon>language</mat-icon>
+      </button>
+      <div class="language-items" [hidden]="!showLanguageMobile">
+          <ul class="language-menu-elements" (click)="changeLanguage($event); showLanguageMobile = false;">
+            <li data-value="es"><img style="width: 20px; margin-right: 5px;" data-value="es" src="assets/images/mex-flag.svg" alt="MX">Español</li>
+            <hr>
+            <li data-value="en"><img style="width: 20px; margin-right: 5px;" data-value="en" src="assets/images/usa-flag.svg" alt="MX">English</li>
+          </ul>
+      </div>
+      <button class="burguer-button" (click)="showMenu();showLanguageMobile = false;">
         <mat-icon>menu</mat-icon>
       </button>
       <div class="menu-items" [hidden]="!showMobileMenu">
         <nav>
           <ul class="burguer-menu-elements">
-            <li>
-              <!-- <mat-icon>home</mat-icon> -->
-              Inicio
+            <li (click)="navigateToSection('inicio'); showMenu()">
+              {{ 'header.inicioMobile' | translate }}
             </li>
             <hr>
-            <li>
-              <!-- <mat-icon>business_center</mat-icon> -->
-              Nosotros
+            <li (click)="navigateToSection('nosotros'); showMenu()">
+              {{ 'header.nosotrosMobile' | translate }}
             </li>
             <hr>
-            <li>
-              <!-- <mat-icon>menu_book</mat-icon> -->
-              Productos
+            <li (click)="navigateToSection('productos'); showMenu()">
+              {{ 'header.productosMobile' | translate }}
             </li>
             <hr>
-            <li>
-              <!-- <mat-icon>menu_book</mat-icon> -->
-              Contactanos
+            <li (click)="navigateToSection('contactanos'); showMenu()">
+              {{ 'header.contactoMobile' | translate }}
             </li>
           </ul>
         </nav>
       </div>
     </div>
   </div>
-
 </header>

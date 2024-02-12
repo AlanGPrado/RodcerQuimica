@@ -1,77 +1,129 @@
 <main>
+  <div class="container-presentation">
+    <div class="porque-container">
+      <div class="porque">
+        <!-- <h2>¿POR QUÉ ELEGIR RODCER QUIMICA?</h2> -->
+        <h2>{{ 'nosotros.titlePorqueElegirnos' | translate }}</h2>
+        <!-- <p style="font-size: 24px;"><strong>Somos una Empresa</strong> Integrada por un equipo de Expertos Técnicos y operadores capacitados
+          con años de experiencia en el manejo y en la distribución de diversos Productos Químicos</p> -->
+        <p style="font-size: 24px;" [innerHtml]="'nosotros.textPorqueElegirnos' | translate"></p>
+        <!-- <img src="assets/images/camion_13.jpeg" alt=""> -->
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-presentation">
+        <div>
+          <span style="display: flex; align-items: flex-end;">
+            <h2>{{ 'nosotros.titleVentajas' | translate }}</h2>
+            <i class="fas fa-thumbs-up" style="color: #005230;width: 40px;height: 40px;font-size: 40px; padding-left: 30px;"></i>
+          </span>
+          <!-- <hr> -->
+          <!-- <p>Contamos con 3 Almacenes En Nuestra Zona, y en uno de los puertos mas importantes de Mexico, una ventaja
+            estrategica para nosotros la cual nos permite importar y ofrecer gran inventario de productos y soluciones
+            de suministros mas flexibles y eficientes para nuestros clientes
+          </p> -->
+          <p>{{ 'nosotros.textVentajas' | translate }}</p>
+        </div>
+        <div>
+          <span style="display: flex; align-items: flex-end;">
+            <h2>{{ 'nosotros.titleInfraestructura' | translate }}</h2>
+            <i class="fas fa-tools" style="color: #005230;width: 40px;height: 40px;font-size: 40px; padding-left: 30px;"></i>
+          </span>
+          <!-- <hr> -->
+          <!-- <p>Nuestra infraestructura solida y bien desarrollada nos permite Estar equipados y listos para atender
+            cualquier demanda de productos de manera constante con Disponibilidad oportuna para toda la República
+            Mexicana
+          </p> -->
+          <p>{{ 'nosotros.textInfraestructura' | translate }}</p>
+        </div>
+        <div>
+          <span style="display: flex; align-items: flex-end;">
+            <h2>{{ 'nosotros.titleTransporte' | translate }}</h2>
+            <i class="fas fa-truck-moving" style="color: #005230;width: 40px;height: 40px;font-size: 40px; padding-left: 30px;"></i>
+          </span>
+          <!-- <hr> -->
+          <ol>
+            <li>
+              <p>{{ 'nosotros.textTransporte1' | translate }}</p>
+            </li>
+            <li>
+              <p>{{ 'nosotros.textTransporte2' | translate }}</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <span style="display: flex; align-items: flex-end;">
+            <h2>{{ 'nosotros.titleCalidadPrecio' | translate}}</h2>
+            <i class="fas fa-award" style="color: #005230;width: 40px;height: 40px;font-size: 40px; padding-left: 30px;"></i>
+          </span>
+          <!-- <hr> -->
+          <p>{{ 'nosotros.textCalidadPrecio' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="img-container-us">
       <img src="assets/images/trabajador_1.jpeg" alt="">
     </div>
     <div class="about-container">
-      <h1>NOSOTROS</h1>
-      <!-- <p>Somos una empresa 100% mexicana, fundada en el año 2015 en la ciudad de Tampico Tamaulipas con el objetivo de
-        brindar a nuestros clientes la seguridad y calidad en nuestra intervención para sus necesidades químicas de
-        cualquier tipo. <br><br>
-        Actualmente en la colaboración de nuestros proveedores y gracias a la aceptación por parte de nuestros clientes
-        INTERQUIM-RC ofrece 3 Áreas, las cuales nos permiten ofrecer servicios integrales y competentes para el mercado.
-      </p> -->
-      <p>RODCER QUIMICA es una empresa integrada por un equipo de expertos tecnicos y operadores formados en compañias
-        con años de
-        experiencia en el manejo, distribución y abastecimiento de diversos productos Quimicos.
-      </p>
+      <h1>{{ 'nosotros.titleNosotros' | translate }}</h1>
+      <p>{{ 'nosotros.textNosotros' | translate}}</p>
     </div>
   </div>
   <div class="chief">
     <div class="mision-vision">
       <div class="mis-vis-container">
         <mat-icon>flag</mat-icon>
-        <h1>MISIÓN</h1>
-        <p>Estamos comprometidos en ser la Empresa lider Mexicana dedicada a la comercialización, servicios de productos
-          Quimicos y materias primas para la industria sumando este objetivo a optimizar calidad y responsabilizarse
-          para
-          el éxito de nuestros clientes. Satisfaciendo las necesidades químicas en diferentes áreas del mercado
-          profesional. Adelantándonos a las expectativas de nuestros consumidores, a través de un profundo conocimiento
-          de sus necesidades en colaboración con nuestros proveedores.</p>
+        <h1>{{ 'nosotros.titleMision' | translate }}</h1>
+        <p>{{ 'nosotros.textMision' | translate }}</p>
       </div>
       <div class="mis-vis-container">
         <mat-icon>terrain</mat-icon>
-        <h1>VISIÓN</h1>
-        <p>Fomentar una alta conciencia de costos y gastos para incrementar la productividad, eficiencia y alta
-          competitividad en el mercado. Seguir con el Diseño y búsqueda de nuevas tecnologías, procesos de trabajo y
-          proyectos de innovación a través de una línea de ejecución impecable.</p>
+        <h1>{{ 'nosotros.titleVision' | translate }}</h1>
+        <p>{{ 'nosotros.textVision' | translate }}</p>
       </div>
       <div class="mis-vis-container">
         <mat-icon>lightbulb</mat-icon>
-        <h1>FILOSOFÍA</h1>
-        <p>Nuestra filosofía marca la guía para el logro de nuestros objetivos, como servidores a la industria y
-          comercio en general local, regional y Nacional.</p>
+        <h1>{{ 'nosotros.titleFilosofia' | translate }}</h1>
+        <p>{{ 'nosotros.textFilosofia' | translate }}</p>
       </div>
       <div class="mis-vis-container">
         <mat-icon>people</mat-icon>
-        <h1>VALORES</h1>
+        <h1>{{ 'nosotros.titleValores' | translate }}</h1>
         <ul class="ul-valores">
-          <li>Puntualidad</li>
-          <li>Lealtad</li>
-          <li>Competividad</li>
-          <li>Honestidad</li>
-          <li>Servicio al Cliente</li>
+          <li>{{ 'nosotros.textValores1' | translate }}</li>
+          <li>{{ 'nosotros.textValores2' | translate }}</li>
+          <li>{{ 'nosotros.textValores3' | translate }}</li>
+          <li>{{ 'nosotros.textValores4' | translate }}</li>
+          <li>{{ 'nosotros.textValores5' | translate }}</li>
         </ul>
       </div>
     </div>
   </div>
+
+  <!-- <div style="display: flex;justify-content: center;">
+    <img src="assets/images/cover.jpg" alt="">
+  </div> -->
+
   <div class="token-container">
     <div class="tokens">
-      <div>
+      <div id="top">
+        <img src="assets/images/mexico-map.svg" alt="" style="width: 20%;">
+        <p class="mx-text">{{ 'nosotros.cobertura' | translate}}</p>
+      </div>
+      <div id="top">
         <img src="assets/images/technical-support.svg" alt="" style="width: 20%;">
-        <p>Servicio técnico especializado</p>
+        <p>{{ 'nosotros.servicio' | translate }}</p>
       </div>
       <div>
         <img src="assets/images/customer-service.svg" alt="" style="width: 20%;">
-        <p>Atención &aacute;gil y personalizada</p>
+        <p>{{ 'nosotros.atencion' | translate }}</p>
       </div>
       <div>
         <img src="assets/images/network-connection.svg" alt="" style="width: 20%;">
-        <p>Alianzas con proveedores certificados</p>
-      </div>
-      <div>
-        <img src="assets/images/mexico-map.svg" alt="" style="width: 20%;">
-        <p>Cobertura a nivel nacional</p>
+        <p>{{ 'nosotros.alianzas' | translate }}</p>
       </div>
     </div>
   </div>

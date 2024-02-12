@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Exo+2:wght@300&family=Lora&family=Raleway&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Exo+2:wght@300&family=Lora&family=Raleway&family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap');
 
 footer {
   background-color: #1d1d1d;
@@ -8,11 +9,13 @@ footer {
 
 
 
-p, h3, a {
+p,
+h3,
+a {
   color: white;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
-
+  // font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 hr {
@@ -33,7 +36,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40vw;
+  gap: 30vw;
   height: 80px;
 
   img {
@@ -48,11 +51,13 @@ hr {
 
   li {
     color: white;
+    // font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
 
-    span {
-      font-family: 'Raleway', sans-serif;
-
-    }
+  li:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 }
 
@@ -68,6 +73,7 @@ hr {
 
 .location {
   width: 10vw;
+
   p {
     text-align: left;
   }
@@ -75,21 +81,36 @@ hr {
 
 .email {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
-  height: 80px;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  h3 {
+    width: 100%;
+  }
+
   a {
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 }
 
 .iframe {
   margin-bottom: 2em;
+
   iframe {
     width: 20vw;
+    border-radius: 12px;
   }
+
   p {
-    font-family: 'Raleway', sans-serif;
+    // font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: white;
     text-align: left;
     width: fit-content;

@@ -1,14 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Exo+2:wght@300&family=Lora&family=Raleway&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Exo+2:wght@300&family=Lora&family=Raleway&family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap');
 
 main {
-  margin-top: 8em;
-  margin-bottom: 5em;
+  padding-top: 8em;
+  // margin-bottom: 5em;
+}
+
+.container-presentation {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+
+  .porque-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 6em;
+
+    .porque {
+      display: flex;
+      width: 70%;
+      flex-direction: column;
+
+      h2 {
+        text-align: left;
+        // color: #005230;
+        font-size: 40px;
+      }
+    }
+  }
+
+  .grid-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .grid-presentation {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 70%;
+      gap: 1em;
+
+      div {
+        position: relative;
+
+        h2 {
+          color: #005230;
+          margin-bottom: 0;
+        }
+
+        p {
+          margin-top: 3em;
+        }
+      }
+
+      hr {
+        position: absolute;
+        width: 15%;
+        height: 2px;
+        background-color: #005230;
+      }
+
+      ol {
+        padding-left: 15px;
+
+        li:nth-child(2) {
+          p {
+            margin-top: 10px !important;
+          }
+        }
+      }
+
+    }
+  }
 }
 
 h1,
 p,
-li {
-  font-family: 'Raleway', sans-serif;
+li,
+h2 {
+  // font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 p {
@@ -29,11 +103,12 @@ p {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 8em;
 }
 
 .img-container-us {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 8em;
 }
 
@@ -95,6 +170,7 @@ p {
 
 .ul-valores {
   list-style-type: square;
+  color: #656565;
 
   li {
     margin-bottom: 10px;
@@ -118,6 +194,10 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
+    #top {
+      margin-bottom: 50px;
+    }
 
     div {
       display: flex;

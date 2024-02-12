@@ -1,5 +1,5 @@
 <app-header></app-header>
-<main>
+<main id="inicio">
   <div>
     <div class="img-container">
       <div></div>
@@ -8,15 +8,17 @@
       <div></div>
       <div></div>
       <div class="title">
-        <h1>RODCER QUÍMICA<br>DE MEXICO S.A. DE C.V.</h1>
-        <h2>Lider en la comercialización e importación<br>de productos Quimicos para la industria.</h2>
+        <!-- <h1>RODCER QUÍMICA<br>DE MEXICO S.A. DE C.V.</h1> -->
+        <h1>{{ 'home.companyName' | translate }}</h1>
+        <!-- <h2>Lider en la comercialización e importación<br>de productos Quimicos para la industria.</h2> -->
+        <h2>{{ 'home.companySlogan' | translate }}</h2>
       </div>
-      <a href="#pr" class="chevron-down">
+      <a class="chevron-down" (click)="navigateToSection('nosotros')" style="cursor: pointer;">
         <img src="assets/images/down.svg" alt="Flecha abajo">
       </a>
     </div>
   </div>
 </main>
-<app-nosotros></app-nosotros>
-<app-productos></app-productos>
-<app-footer></app-footer>
+<app-nosotros id="nosotros"></app-nosotros>
+<app-productos id="productos"></app-productos>
+<app-footer id="contactanos"></app-footer>

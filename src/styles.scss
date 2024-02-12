@@ -7,6 +7,32 @@ body {
   // height: 100%;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
+// /* Style the main scrollbar container */
+// ::-webkit-scrollbar {
+//   width: 8px !important;
+// }
+
+// /* Track (the area on which the thumb moves) */
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1 !important;
+// }
+
+// /* Handle (the thumb) */
+// ::-webkit-scrollbar-thumb {
+//   background: #888 !important;
+//   border-radius: 10px !important;
+
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555 !important;
+// }
+
 /* MOBILE STYLES */
 @media screen and (max-width: 767px) {
   .header-container {
@@ -39,14 +65,18 @@ body {
 
     .menu-mobile {
       display: flex !important;
-      width: 20% !important;
+      width: 33% !important;
+
+      .burguer-button {
+        margin-left: 16px !important;
+      }
 
       button {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 45px;
-        width: 45px;
+        height: 48px;
+        width: 48px;
         border-radius: 7px;
         border: 1px solid black !important;
         background-color: white;
@@ -83,12 +113,31 @@ body {
     }
   }
 
+  .container-presentation {
+
+    .porque-container {
+
+      .porque {
+        width: 85% !important;
+
+        p {
+          font-size: 23px !important;
+        }
+      }
+    }
+
+    .grid-presentation {
+      grid-template-columns: none !important;
+      width: 85% !important;
+    }
+  }
+
   .img-container-us {
     padding: 0 !important;
     justify-content: center !important;
 
     img {
-      width: 70% !important;
+      width: 80% !important;
     }
   }
 
@@ -96,11 +145,12 @@ body {
     padding: 0 !important;
 
     h1 {
-      text-align: center;
+      text-align: left;
+      padding-left: 7.5%;
     }
 
     p {
-      padding: 0 5% 0 5%;
+      padding: 0 7.5% 0 7.5%;
     }
   }
 
@@ -123,7 +173,13 @@ body {
 
   .tokens {
     img {
-      width: 35% !important;
+      width: 40% !important;
+    }
+
+    #top {
+      .mx-text {
+        width: 90%;
+      }
     }
   }
 
@@ -168,6 +224,7 @@ body {
 
     .text-clean-2 {
       padding-bottom: 30px !important;
+      background-color: #F8F8F8 !important;
 
       h2 {
         text-align: left !important;
@@ -241,7 +298,7 @@ body {
     }
 
     .button-contact {
-      display: none;
+      display: none !important;
     }
 
     .logo {
@@ -254,8 +311,18 @@ body {
 
     .menu-mobile {
       display: flex !important;
-      width: 20% !important;
+      width: 33% !important;
       justify-content: flex-end !important;
+
+      .burguer-button {
+        margin-left: 26px !important;
+      }
+
+
+      .language-items {
+        width: 18% !important;
+        right: 228px !important;
+      }
 
       button {
         display: flex;
@@ -274,6 +341,10 @@ body {
           color: black;
         }
       }
+
+      .menu-items {
+        width: 18% !important;
+      }
     }
 
     .menu-mobile {
@@ -284,6 +355,18 @@ body {
   .title {
     h1 {
       font-size: 4em !important
+    }
+  }
+
+  .porque-container {
+    .porque {
+      width: 80% !important;
+    }
+  }
+
+  .grid-container {
+    .grid-presentation {
+      width: 80% !important;
     }
   }
 
@@ -324,6 +407,15 @@ body {
     }
   }
 
+  .tokens {
+    gap: 30px;
+
+    img {
+      width: 30% !important;
+      height: auto;
+    }
+  }
+
   .container-products-title {
 
     .title-products {
@@ -339,6 +431,12 @@ body {
   .parent-double {
     display: flex !important;
     flex-direction: column !important;
+
+    .text-clean {
+      p {
+        font-size: 20px !important;
+      }
+    }
 
     img {
       width: 100% !important;
@@ -357,6 +455,14 @@ body {
   .parent-double-2 {
     display: flex !important;
     flex-direction: column-reverse !important;
+
+    .text-clean-2 {
+      background-color: #F8F8F8 !important;
+
+      p {
+        font-size: 20px !important;
+      }
+    }
 
     img {
       width: 100% !important;
@@ -377,7 +483,7 @@ body {
     min-height: 20rem !important;
 
     h3 {
-      font-size: 17px !important;
+      font-size: 16px !important;
     }
 
     a {
@@ -414,5 +520,46 @@ body {
   .nav-list {
     padding: 0 !important;
     gap: 40px !important;
+  }
+}
+
+@media screen and (max-width: 375px) and (max-height: 900px) {
+  .container-materia {
+    h1 {
+      font-size: 26px !important;
+      margin-bottom: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    p {
+      font-size: 15px !important;
+    }
+
+    ul {
+      font-size: 14px !important;
+    }
+  }
+
+  .modal-content {
+    h1 {
+      font-size: 24px !important;
+      margin-bottom: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    p {
+      font-size: 14px !important;
+    }
+
+    .container-content {
+      h2 {
+        margin-top: 5px !important;
+        margin-bottom: 0 !important;
+        font-size: 20px;
+      }
+      ul {
+        font-size: 14px !important;
+      }
+    }
   }
 }

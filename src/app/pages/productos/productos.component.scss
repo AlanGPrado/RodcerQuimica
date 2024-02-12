@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Exo+2:wght@300&family=Lora&family=Raleway&family=Roboto:wght@300;400&display=swap');
 
+main {
+  padding-top: 8em;
+}
+
 .container-products-title {
   width: 100%;
   display: flex;
@@ -53,8 +57,13 @@
       justify-content: center;
       font-family: 'Raleway', sans-serif;
 
+      h2 {
+        text-align: left;
+      }
+
       p {
         text-align: initial;
+        color: #656565;
       }
     }
   }
@@ -81,8 +90,13 @@
   justify-content: center;
   font-family: 'Raleway', sans-serif;
 
+  h2 {
+    text-align: left;
+  }
+
   p {
     text-align: initial;
+    color: #656565;
   }
 }
 
@@ -132,7 +146,7 @@ a::before {
 .pdf-parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 50vw;
+  width: 60%;
 
   .more-info {
     font-family: 'Raleway', sans-serif;
@@ -224,7 +238,7 @@ a::before {
   padding-right: 10px;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
-  margin-top: 10%;
+  margin-top: 30px;
   width: 50%;
   text-align: center;
   display: flex;
